@@ -3,11 +3,13 @@ import Follow from "./app/components/Follow";
 import Register from "./app/components/Register";
 import Users from "./app/components/Users";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./app/components/Navbar";
 
 function App() {
   return (
     <div className="container my-3">
       <Router>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<Register />} />
 
